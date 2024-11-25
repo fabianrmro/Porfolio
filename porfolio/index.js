@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+
     // Dark Mode Toggle
     const themeToggle = document.getElementById("themeToggle");
 
@@ -38,3 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
     introTitle.textContent = spanishText.introTitle;
     introText.textContent = spanishText.introText;
 });
+
+
+function downloadCV() {
+    const cvUrl = 'doc/cv/Fabian_Romero_CV.pdf';
+
+    const a = document.createElement('a');
+    a.href = cvUrl; // Ruta del CV
+    a.download = 'Fabian_Romero_CV.pdf'; // Nombre sugerido para la descarga
+    a.click(); // Simula el clic en el enlace
+    a.remove(); // Elimina el enlace temporal
+}

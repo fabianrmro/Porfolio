@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://www.example.com/thumbnail.jpg">
-    <meta property="og:title" content="Fabián Romero - Full Stack Developer">
-    <meta property="og:description" content="Portafolio de Fabián Romero, desarrollador Full Stack.">
-    <title>Portafolio de Fabián Romero</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <meta property="og:title" content="Fabian Romero's Portfolio">
+    <meta property="og:description" content="Descubre mis proyectos y habilidades como programador Full Stack.">
+    <title>Fabian Romero's portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div id="app">
-        <!-- Header -->
-        <header>
-            <div class="header-content">
-                <div class="logo">
-                    <h1>Fabián Romero</h1>
-                    <p>Full Stack Developer</p>
-                </div>
-                <button id="languageToggle">EN/ES</button>
-                <button id="themeToggle">🌙</button>
+    <header>
+        <div class="slider">
+            <div class="slide">
+                <img src="project1.jpg" alt="Proyecto 1">
             </div>
-        </header>
+            <div class="slide">
+                <img src="project2.jpg" alt="Proyecto 2">
+            </div>
 
-        <!-- Intro Section -->
+        </div>
+        <div class="header-content">
+            <h1>¡Hola! Soy Fabian Romero 👋🏻!</h1>
+            <p>Desarrollador Full Stack apasionado por la tecnología y la innovación.</p>
+            <button onclick="downloadCV()">Descargar CV</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro -->
         <section id="intro">
-            <h2 class="intro-title"></h2>
-            <p id="intro-text"></p>
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy [Tu Nombre], un desarrollador Full Stack con experiencia en proyectos creativos. Siempre busco
+                aprender nuevas tecnologías y mejorar mis habilidades.</p>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="project" id="rayo">
@@ -90,21 +95,17 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2 class="section-title">Contact</h2>
-            <form id="contactForm">
-                <textarea placeholder="Send a message..."></textarea>
-                <button type="submit">Send Message</button>
-            </form>
             <ul>
                 <li><a href="https://github.com/fabianrmro" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/fabianrmro/" target="_blank">LinkedIn</a></li>
                 <li><a href="mailto:ro.romerotorres@gmail.com">Email</a></li>
                 <li><a href="https://wa.me/34640688593" target="_blank">WhatsApp</a></li>
             </ul>
-            <a href="Fabián Romero.pdf" download>Download CV</a>
+            <a href="doc/Fabián Romero.pdf" download>Download CV</a>
         </section>
-    </div>
+        </div>
 
-    <script src="script.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
