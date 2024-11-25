@@ -1,98 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="thumbnail.jpg">
-    <meta property="og:title" content="Portafolio de [Tu Nombre]">
-    <meta property="og:description" content="Descubre mis proyectos y habilidades como programador Full Stack.">
-    <title>Portafolio de [Tu Nombre]</title>
-    <link rel="stylesheet" href="index.css">
+    <meta property="og:image" content="https://www.example.com/thumbnail.jpg">
+    <meta property="og:title" content="Fabián Romero - Full Stack Developer">
+    <meta property="og:description" content="Portafolio de Fabián Romero, desarrollador Full Stack.">
+    <title>Portafolio de Fabián Romero</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="slider">
-            <div class="slide">
-                <img src="project1.jpg" alt="Proyecto 1">
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Fabián Romero</h1>
+                    <p>Full Stack Developer</p>
+                </div>
+                <button id="languageToggle">EN/ES</button>
+                <button id="themeToggle">🌙</button>
             </div>
-            <div class="slide">
-                <img src="project2.jpg" alt="Proyecto 2">
-            </div>
-            <div class="slide">
-                <img src="project3.jpg" alt="Proyecto 3">
-            </div>
-        </div>
-        <div class="header-content">
-            <h1>¡Hola! Soy [Tu Nombre]</h1>
-            <p>Desarrollador Full Stack apasionado por la tecnología y la innovación.</p>
-            <button onclick="downloadCV()">Descargar CV</button>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <!-- Intro -->
+        <!-- Intro Section -->
         <section id="intro">
-            <h2>Sobre mí</h2>
-            <p>¡Hola! Soy [Tu Nombre], un desarrollador Full Stack con experiencia en proyectos creativos. Siempre busco
-                aprender nuevas tecnologías y mejorar mis habilidades.</p>
+            <h2 class="intro-title"></h2>
+            <p id="intro-text"></p>
         </section>
 
-        <!-- Projects -->
+        <!-- Projects Section -->
         <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project" data-lang="JavaScript">
-                    <img src="ponies.jpg" alt="Proyecto Ponies">
-                    <h3>Ponies</h3>
-                    <p>Descripción del proyecto...</p>
-                    <span class="badge">JavaScript</span>
-                </div>
-                <div class="project" data-lang="React">
-                    <img src="lili.jpg" alt="Proyecto Lili">
-                    <h3>Lili</h3>
-                    <p>Descripción del proyecto...</p>
-                    <span class="badge">React</span>
-                </div>
-                <div class="project" data-lang="C#">
-                    <img src="nerina.jpg" alt="Proyecto Nerina">
-                    <h3>Nerina</h3>
-                    <p>Descripción del proyecto...</p>
-                    <span class="badge">C#</span>
-                </div>
+            <h2 class="section-title">Projects</h2>
+            <div class="project" id="rayo">
+                <img src="rayo-thumbnail.jpg" alt="Rayo Project">
+                <h3>Rayo</h3>
+                <p class="tech-stack">Tech Stack: React, Node.js, MongoDB</p>
+                <div class="status">In Progress</div>
+            </div>
+            <div class="project" id="uture">
+                <img src="uture-thumbnail.jpg" alt="Uture Project">
+                <h3>Uture</h3>
+                <p class="tech-stack">Tech Stack: React, Node.js, MongoDB</p>
+                <div class="status">Construction</div>
             </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Technical Section -->
+        <section id="technical">
+            <h2 class="section-title">Technical</h2>
+            <div class="blocks">
+                <div class="block">App (User Interface)</div>
+                <div class="block">API (Core Logic)</div>
+                <div class="block">DB (Data Storage)</div>
+            </div>
+            <div class="packages">
+                <div class="package">api (Server)</div>
+                <div class="package">cor (Core Logic Dependency)</div>
+                <div class="package">com (Common Dependencies)</div>
+                <div class="package">app (Client)</div>
+                <div class="package">doc (Project Documentation)</div>
+            </div>
+            <div class="technologies">
+                <p>Technologies: HTML, CSS, JS, Node, Express, React, MongoDB, Mongoose, Bcrypt, TailwindCSS, JWT</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <p>Bootcamp Full Stack en ISDI Coders, con formación intensiva en desarrollo web y móvil, cubriendo frontend
+                y backend.</p>
+        </section>
+
+        <!-- Skills Section -->
         <section id="skills">
-            <h2>Tecnologías</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>MongoDB</li>
-                <li>HTML/CSS</li>
-            </ul>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu correo" required>
-                <textarea placeholder="Tu mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="contact-links">
-                <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
-                <a href="mailto:tuemail@gmail.com">Correo</a>
-                <a href="https://wa.me/tu-numero">WhatsApp</a>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">TailwindCSS</div>
             </div>
         </section>
-    </main>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form id="contactForm">
+                <textarea placeholder="Send a message..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <ul>
+                <li><a href="https://github.com/fabianrmro" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/fabianrmro/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:ro.romerotorres@gmail.com">Email</a></li>
+                <li><a href="https://wa.me/34640688593" target="_blank">WhatsApp</a></li>
+            </ul>
+            <a href="Fabián Romero.pdf" download>Download CV</a>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

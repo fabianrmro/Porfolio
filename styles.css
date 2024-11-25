@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #97999a;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #6200ea;
+}
+
+#intro {
+    margin: 40px 0;
+}
+
+#projects,
+#technical,
+#education,
+#skills,
+#contact {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.project {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.status {
+    margin-top: 10px;
+    color: #f44336;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #6200ea;
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#themeToggle {
+    margin-left: 10px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode button {
+    border-color: black;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3700b3;
+}
+
+a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Transitions and Animations */
+#intro h2 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
