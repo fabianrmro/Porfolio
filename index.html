@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="thumbnail.jpg">
+    <meta property="og:title" content="Portafolio de [Tu Nombre]">
+    <meta property="og:description" content="Descubre mis proyectos y habilidades como programador Full Stack.">
+    <title>Portafolio de [Tu Nombre]</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="slider">
+            <div class="slide">
+                <img src="project1.jpg" alt="Proyecto 1">
+            </div>
+            <div class="slide">
+                <img src="project2.jpg" alt="Proyecto 2">
+            </div>
+            <div class="slide">
+                <img src="project3.jpg" alt="Proyecto 3">
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>¡Hola! Soy [Tu Nombre]</h1>
+            <p>Desarrollador Full Stack apasionado por la tecnología y la innovación.</p>
+            <button onclick="downloadCV()">Descargar CV</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro -->
+        <section id="intro">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy [Tu Nombre], un desarrollador Full Stack con experiencia en proyectos creativos. Siempre busco
+                aprender nuevas tecnologías y mejorar mis habilidades.</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project" data-lang="JavaScript">
+                    <img src="ponies.jpg" alt="Proyecto Ponies">
+                    <h3>Ponies</h3>
+                    <p>Descripción del proyecto...</p>
+                    <span class="badge">JavaScript</span>
+                </div>
+                <div class="project" data-lang="React">
+                    <img src="lili.jpg" alt="Proyecto Lili">
+                    <h3>Lili</h3>
+                    <p>Descripción del proyecto...</p>
+                    <span class="badge">React</span>
+                </div>
+                <div class="project" data-lang="C#">
+                    <img src="nerina.jpg" alt="Proyecto Nerina">
+                    <h3>Nerina</h3>
+                    <p>Descripción del proyecto...</p>
+                    <span class="badge">C#</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Tecnologías</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-links">
+                <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+                <a href="mailto:tuemail@gmail.com">Correo</a>
+                <a href="https://wa.me/tu-numero">WhatsApp</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
